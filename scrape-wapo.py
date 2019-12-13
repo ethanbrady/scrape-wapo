@@ -72,7 +72,7 @@ def format_elements(story_soup, title, subtitle, authors, publish_date, modify_d
                 f'**{subtitle}**',
                 f'By {parse_authors(authors)}',
                 parse_date(publish_date).strftime('%b. %d, %Y'),
-                f"Updated {parse_date(modify_date).strftime('%-H:%M')}"
+                f"Updated {parse_date(modify_date).strftime('%H:%M')}"
                 ]
 
     grafs = story_soup.find_all('p')
